@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <button onclick="ascending()">Show Ascending</button>
+    <button onclick="descending()">Show Descending</button>
+    <p id="result"></p>
+    <p id="result2"></p>
+</body>
+<script>
+    // The array that will be multiplied by 10
+    var numbers = [16, 2, 35, 24, 65, 1];
+
+    function multiplyBy10(num) {
+        return num * 10;
+    }
+
+    var newarray = numbers.map(multiplyBy10);
+    document.getElementById("result").innerHTML = JSON.stringify(newarray);
+
+    function ascending() {
+        newarray.sort(function (a, b) {
+            return a - b;
+        })
+        document.getElementById("result2").innerHTML = JSON.stringify(newarray);
+    }
+    function descending() {
+        newarray.sort(function (a, b) {
+            return b - a;
+        })
+        document.getElementById("result2").innerHTML = JSON.stringify(newarray);
+    }
+</script>
+
+</html>

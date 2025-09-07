@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>fruits are spelled uppercase lol</title>
+</head>
+
+<body>
+</body>
+<script>
+    //The array of fruits
+    function fruitsAreUppercase() {
+        var fruits = ["apple", "banana", "mango"];
+        //Using math functions to convert fruits to uppercase
+        var fruitsUppercase = fruits.map(function (fruit) {
+            return fruit.toUpperCase();
+        });
+        return fruitsUppercase;
+    }
+    document.write(fruitsAreUppercase().join(", "));
+</script>
+
+</html>
