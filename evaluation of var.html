@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>iykyk</title>
+</head>
+
+<body>
+    <h2>You're not sarcastic, yet annoying... :O </h2>
+    <button onclick="evaluation()">Click me to evaluate random numbers</button>
+    <p id="result"></p>
+</body>
+<script>
+    //Evaluating random variables
+    function evaluation() {
+        var x = 7;
+        var y = 11;
+
+        var a = eval("x + y") + "<br>";
+        var b = eval("y - x") + "<br>";
+        var c = eval("2 * x * y") + "<br>";
+
+        var res = a + b + c;
+        document.getElementById("result").innerHTML = res;
+    }
+</script>
+
+</html>

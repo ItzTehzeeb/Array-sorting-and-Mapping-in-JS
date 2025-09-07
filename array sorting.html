@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>null</title>
+</head>
+
+<body>
+    <p>Click the preferred button below to view your points, either in ascending or descending order.</p>
+    <button onclick="ascending()">View Ascending</button>
+    <button onclick="descending()">View Descending</button>
+    <p id="result"></p>
+</body>
+<script>
+    var points = [95, 40, 21, 73, 82];
+
+    //Ascending order function
+    function ascending() {
+        points.sort(function (a, b) {
+            return a - b;
+        });
+        document.getElementById("result").innerHTML = points.join(", ");
+    }
+
+    //Descending order function
+    function descending() {
+        points.sort(function (a, b) {
+            return b - a;
+        });
+        document.getElementById("result").innerHTML = points.join(", ");
+    }
+</script>
+
+</html>

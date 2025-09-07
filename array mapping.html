@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>why do u always come back?</title>
+</head>
+
+<body>
+    <p>Watch how I give u twice the points each!</p>
+    <p id="result"></p>
+</body>
+<script>
+    var numbers = [95, 40, 21, 73, 82];
+
+    function doublePts(num) {
+        return num * 2;
+    }
+
+    var newarray = numbers.map(doublePts);
+    document.getElementById("result").innerHTML = newarray.join(", ");
+</script>
+
+</html>
